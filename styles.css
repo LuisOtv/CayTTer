@@ -1,0 +1,55 @@
+/* Default background and font */
+html,
+body {
+  background: #101010 !important;
+}
+
+/* Hide unwanted elements */
+a[href*="/communities"],
+a[href="/i/communitynotes"],
+a[href="/i/premium_sign_up"],
+a[href="/i/grok"],
+a[href="/explore"],
+a[href="/i/verified-orgs-signup"],
+div[role="separator"],
+div[role="complementary"],
+div[role="region"],
+.r-1ifxtd0,
+[data-testid="GrokDrawerHeader"],
+[aria-label="Grok actions"] {
+  display: none !important;
+}
+
+/* Tweet styling */
+[data-testid="tweet"] {
+  background: #121212 !important;
+  padding: 10px !important;
+  margin: 12px 0 !important;
+  border-radius: 10px !important;
+  border: 2px solid #151515 !important;
+}
+
+/* Hide verified users' tweets */
+[data-testid="tweet"]:has([data-testid="icon-verified"]) {
+  display: none !important;
+}
+
+/* Main column */
+[data-testid="primaryColumn"],
+[aria-live="polite"],
+.r-5zmot,
+.r-kemksi {
+  background: #101010 !important;
+  border-color: #101010 !important;
+}
+
+.r-l5o3uw {
+  display: none !important;
+}
+
+/* Elements with white background */
+.r-1vtznih,
+div[aria-live="polite"] {
+  background: #fff !important;
+  color: #000 !important;
+}
