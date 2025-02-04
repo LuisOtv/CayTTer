@@ -3,7 +3,6 @@
   "name": "CayTTer",
   "version": "1.0",
   "description": "A simple, minimal Twitter theme.",
-  "permissions": ["scripting"],
   "host_permissions": ["https://x.com/*"],
   "action": {
     "default_popup": "popup.html"

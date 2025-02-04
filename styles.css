@@ -1,10 +1,30 @@
-/* Default background and font */
-html,
-body {
-  background: #101010 !important;
-}
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
-/* Hide unwanted elements */
+body {
+  background-color: #151515 !important;
+}
+/*main bar and side bar*/
+.r-kemksi {
+  background-color: #151515 !important;
+  border-color: transparent !important;
+}
+/*tweet*/
+.r-1c7gwzm {
+  background: #232321 !important;
+  padding: 10px !important;
+  margin: 12px 0 !important;
+  border-radius: 10px !important;
+  border: 2px solid #232323 !important;
+}
+/*tweet*/
+.r-1c7gwzm:has([data-testid="icon-verified"]) {
+  display: none;
+}
+/*divider*/
+.r-gu4em3 {
+  background-color: transparent !important;
+}
+/*stuff*/
 a[href*="/communities"],
 a[href="/i/communitynotes"],
 a[href="/i/premium_sign_up"],
@@ -14,42 +34,47 @@ a[href="/i/verified-orgs-signup"],
 div[role="separator"],
 div[role="complementary"],
 div[role="region"],
-.r-1ifxtd0,
 [data-testid="GrokDrawerHeader"],
 [aria-label="Grok actions"] {
   display: none !important;
 }
-
-/* Tweet styling */
-[data-testid="tweet"] {
-  background: #121212 !important;
-  padding: 10px !important;
-  margin: 12px 0 !important;
-  border-radius: 10px !important;
-  border: 2px solid #151515 !important;
-}
-
-/* Hide verified users' tweets */
-[data-testid="tweet"]:has([data-testid="icon-verified"]) {
+/*sign premium pop*/
+.r-uaa2di {
   display: none !important;
 }
-
-/* Main column */
-[data-testid="primaryColumn"],
-[aria-live="polite"],
-.r-5zmot,
-.r-kemksi {
-  background: #101010 !important;
-  border-color: #101010 !important;
+/*font*/
+.r-37j5jr {
+  font-family: "Varela Round", sans-serif !important;
 }
-
-.r-l5o3uw {
+/*grok button big*/
+.r-hvns9x {
   display: none !important;
 }
-
-/* Elements with white background */
-.r-1vtznih,
-div[aria-live="polite"] {
-  background: #fff !important;
-  color: #000 !important;
+/*side bar*/
+.r-1ifxtd0 {
+  display: none !important;
+}
+/*foryou bar and followuig*/
+.r-10m9thr {
+  background-color: #151515 !important;
+}
+/*buttons*/
+.r-yyyyoo {
+  fill: #ffffff !important;
+}
+/*words*/
+.css-1jxf684 {
+  color: #ffffff !important;
+}
+/*button post big*/
+a[href="/compose/post"] {
+  background-color: #232323 !important;
+}
+/*button post small*/
+[data-testid="tweetButtonInline"] {
+  background-color: #232323 !important;
+}
+/*header 2*/
+.r-1h3ijdo {
+  background-color: #151515 !important;
 }
