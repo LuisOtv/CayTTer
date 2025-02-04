@@ -142,29 +142,48 @@ chrome.runtime.onMessage.addListener((message) => {
   }
 });
 // Load state on page open
-chrome.storage.sync.get("hideBlueUsers", (data) => {
+chrome.storage.sync.get(["hideBlueUsers", "squareImages", "hideHome", "hideSearch", "hideNotification", "hideDMs", "hideGrok", "hideBookmark", "hideCommunity", "hidePremium", "hideVerified", "hideNotes", "hideProfile", "hideMore"], (data) => {
+  // Apply each setting based on the stored values
   if (data.hideBlueUsers) {
     document.styleSheets[0].insertRule('[data-testid="tweet"]:has([data-testid="icon-verified"]) { display: none !important; }', 0);
   }
   if (data.squareImages) {
-    document.styleSheets[0].insertRule(".r-sdzlij{border-radius: 0px}", 0);
+    document.styleSheets[0].insertRule(".r-sdzlij { border-radius: 0px !important; }", 0);
   }
   if (data.hideHome) {
+    document.styleSheets[0].insertRule('a[href*="/home"] { display: none !important; }', 0);
+  }
+  if (data.hideSearch) {
     document.styleSheets[0].insertRule('a[href*="/explore"] { display: none !important; }', 0);
   }
-  if (data.hideCommunity) {
-    document.styleSheets[0].insertRule('a[href*="/communities"] { display: none !important; }', 0);
+  if (data.hideNotification) {
+    document.styleSheets[0].insertRule('a[href="/notifications"] { display: none !important; }', 0);
   }
-  if (data.hideCommunityNotes) {
-    document.styleSheets[0].insertRule('a[href="/i/communitynotes"] { display: none !important; }', 0);
-  }
-  if (data.hidePremium) {
-    document.styleSheets[0].insertRule('a[href="/i/premium_sign_up"] { display: none !important; }', 0);
+  if (data.hideDMs) {
+    document.styleSheets[0].insertRule('a[href="/messages"] { display: none !important; }', 0);
   }
   if (data.hideGrok) {
     document.styleSheets[0].insertRule('a[href="/i/grok"] { display: none !important; }', 0);
   }
+  if (data.hideBookmark) {
+    document.styleSheets[0].insertRule('a[href="/i/bookmarks"] { display: none !important; }', 0);
+  }
+  if (data.hideCommunity) {
+    document.styleSheets[0].insertRule('a[href*="/communities"] { display: none !important; }', 0);
+  }
+  if (data.hidePremium) {
+    document.styleSheets[0].insertRule('a[href="/i/premium_sign_up"] { display: none !important; }', 0);
+  }
   if (data.hideVerified) {
     document.styleSheets[0].insertRule('a[href="/i/verified-orgs-signup"] { display: none !important; }', 0);
+  }
+  if (data.hideNotes) {
+    document.styleSheets[0].insertRule('a[href="/i/communitynotes"] { display: none !important; }', 0);
+  }
+  if (data.hideProfile) {
+    document.styleSheets[0].insertRule('a[href="/i/profile"] { display: none !important; }', 0);
+  }
+  if (data.hideMore) {
+    document.styleSheets[0].insertRule('[data-testid="AppTabBar_More_Menu"] { display: none !important; }', 0);
   }
 });

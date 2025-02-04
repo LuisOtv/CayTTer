@@ -47,11 +47,11 @@ img,
   width: 25px;
 }
 
-.middle-side,
-.right-side {
+.middle-side {
   margin-left: 10px;
-  min-width: 80px;
-  min-height: 250px;
+  margin-right: 10px;
+  min-width: 160px;
+  min-height: 300px;
   background-color: #232323;
   border-radius: 5px;
 }
