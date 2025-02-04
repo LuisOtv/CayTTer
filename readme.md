@@ -7,5 +7,5 @@
 <h2>⚙️ Features</h2>
 <ul>
   <li>🚫 Removed unnecessary buttons (like Get Premium, Grok, etc.)</li>
-  <li>👀 Auto-hides tweets from blue-check users (you can modify <code>styles.css</code> to show them again)</li>
+  <li>👀 Hide tweets from blue-check users, you can change this on the settings.</li>
 </ul>
