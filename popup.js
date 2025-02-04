@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const blue = document.getElementById("blueuser");
 	const square = document.getElementById("squared");
 
-	// Verifica se a aba ativa é o Twitter
+	// verify if twitter is open
 	chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
 		if (!tabs.length || !tabs[0].url || !tabs[0].url.includes("x.com")) {
 			return;
