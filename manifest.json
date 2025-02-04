@@ -1,23 +1,23 @@
 {
-	"manifest_version": 3,
-	"name": "CayTTer",
-	"version": "1.0",
-	"description": "A simple, minimal Twitter theme.",
-	"permissions": ["storage"],
-	"host_permissions": ["https://x.com/*"],
-	"action": {
-		"default_popup": "popup.html"
-	},
-	"content_scripts": [
-		{
-			"matches": ["https://x.com/*"],
-			"css": ["styles.css"],
-			"js": ["settings.js"]
-		}
-	],
-	"icons": {
-		"16": "icon.png",
-		"48": "icon.png",
-		"128": "icon.png"
-	}
+  "manifest_version": 3,
+  "name": "CayTTer",
+  "version": "1.0",
+  "description": "A simple, minimal Twitter theme.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://x.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "css": ["styles.css"],
+      "js": ["settings.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }

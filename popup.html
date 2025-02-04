@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="popup.css" />
-	</head>
-	<body>
-		<div class="settings">
-			<h1>settings</h1>
-			<div class="config">
-				<input type="checkbox" id="blueuser" />
-				<label for="blueuser">hide verified users</label>
-			</div>
-			<div class="config">
-				<input type="checkbox" id="squared" />
-				<label for="blueuser">square images</label>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="left-side">
+      <label><input type="checkbox" id="home" /><img src="icons/home.png" class="icon" alt="Home" /></label>
+      <label><input type="checkbox" id="search" /><img src="icons/search.png" class="icon" alt="Search" /></label>
+      <label><input type="checkbox" id="notifications" /><img src="icons/bell.png" class="icon" alt="Notifications" /></label>
+      <label><input type="checkbox" id="dms" /><img src="icons/dm.png" class="icon" alt="DMs" /></label>
+      <label><input type="checkbox" id="grok" /><img src="icons/grok.png" class="icon" alt="Grok" /></label>
+      <label><input type="checkbox" id="bookmark" /><img src="icons/label.png" class="icon" alt="Bookmark" /></label>
+      <label><input type="checkbox" id="community" /><img src="icons/community.png" class="icon" alt="Community" /></label>
+      <label><input type="checkbox" id="premium" /><img src="icons/premium.png" class="icon" alt="Premium" /></label>
+      <label><input type="checkbox" id="verified" /><img src="icons/verified.png" class="icon" alt="Verified" /></label>
+      <label><input type="checkbox" id="notes" /><img src="icons/notes.png" class="icon" alt="Notes" /></label>
+      <label><input type="checkbox" id="profile" /><img src="icons/profile.png" class="icon" alt="Profile" /></label>
+      <label><input type="checkbox" id="more" /><img src="icons/more.png" class="icon" alt="More" /></label>
+    </div>
+    <div class="middle-side"></div>
+    <div class="right-side"></div>
 
-			<script src="popup.js"></script>
-		</div>
+    <div class="settings">
+      <h1>settings</h1>
+      <div class="config">
+        <input type="checkbox" id="blueuser" />
+        <label for="blueuser">hide verified users</label>
+      </div>
+      <div class="config">
+        <input type="checkbox" id="squared" />
+        <label for="blueuser">square images</label>
+      </div>
+    </div>
 
-		<div class="credits">
-			<p>
-				extension by caytie:
-				<a href="https://github.com/LuisOtv" target="_blank">GitHub</a>
-			</p>
-		</div>
-	</body>
+    <div class="credits">
+      <p>
+        extension by caytie:
+        <a href="https://github.com/LuisOtv" target="_blank">GitHub</a>
+      </p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>

@@ -1,84 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 body {
-	background-color: #151515 !important;
+  background-color: #151515 !important;
 }
 /*main bar and side bar*/
 .r-kemksi {
-	background-color: #151515 !important;
-	border-color: transparent !important;
+  background-color: #151515 !important;
+  border-color: transparent !important;
 }
 /*tweet*/
 .r-1c7gwzm {
-	background: #232323 !important;
-	padding: 10px !important;
-	margin: 12px 0 !important;
-	border-radius: 10px !important;
-	border: 2px solid #393939 !important;
+  background: #232323 !important;
+  padding: 10px !important;
+  margin: 12px 0 !important;
+  border-radius: 10px !important;
+  border: 2px solid #393939 !important;
 }
 /*divider*/
 .r-gu4em3 {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 /*stuff*/
-a[href*="/communities"],
-a[href="/i/communitynotes"],
-a[href="/i/premium_sign_up"],
-a[href="/i/grok"],
-a[href="/explore"],
-a[href="/i/verified-orgs-signup"],
 div[role="separator"],
 div[role="complementary"],
 div[role="region"],
 [data-testid="GrokDrawerHeader"],
 [aria-label="Grok actions"] {
-	display: none !important;
+  display: none !important;
 }
+
 /*sign premium pop*/
 .r-uaa2di {
-	display: none !important;
+  display: none !important;
 }
 /*font*/
 .r-37j5jr {
-	font-family: "Varela Round", sans-serif !important;
+  font-family: "Varela Round", sans-serif !important;
 }
 /*grok button big*/
 .r-hvns9x {
-	display: none !important;
+  display: none !important;
 }
 /*side bar*/
 .r-1ifxtd0 {
-	display: none !important;
+  display: none !important;
 }
 /*foryou bar and followuig*/
 .r-10m9thr {
-	background-color: #151515 !important;
+  background-color: #151515 !important;
 }
 /*buttons*/
 .r-yyyyoo {
-	fill: #ffffff !important;
+  fill: #ffffff !important;
 }
 /*words*/
 .css-1jxf684 {
-	color: #ffffff !important;
+  color: #ffffff !important;
 }
 /*button post big*/
 a[href="/compose/post"] {
-	background-color: #232323 !important;
+  background-color: #232323 !important;
 }
 /*button post small*/
 [data-testid="tweetButtonInline"] {
-	background-color: #232323 !important;
+  background-color: #232323 !important;
 }
 /*header 2*/
 .r-1h3ijdo {
-	background-color: #151515 !important;
+  background-color: #151515 !important;
 }
 /*your account has been seen by x people*/
 .r-1eltapf {
-	display: none !important;
+  display: none !important;
 }
 /*twitter logo*/
 .r-8kz0gk {
-	display: none !important;
+  display: none !important;
 }
