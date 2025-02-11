@@ -1,16 +1,22 @@
+:root {
+	--main-color: #151515;
+	--secondary-color: #232323;
+	--highlight-color: #ffffff;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 body {
-	background-color: #151515 !important;
+	background-color: var(--main-color) !important; /*main color*/
 }
 /*main bar and side bar*/
 .r-kemksi {
-	background-color: #151515 !important;
+	background-color: var(--main-color) !important; /*main color*/
 	border-color: transparent !important;
 }
 /*tweet*/
 .r-1c7gwzm {
-	background: #232323 !important;
+	background: var(--secondary-color) !important; /*secondary color*/
 	padding: 10px !important;
 	margin: 12px 0 !important;
 	border-radius: 10px !important;
@@ -47,27 +53,27 @@ div[role="region"],
 }
 /*foryou bar and followuig*/
 .r-10m9thr {
-	background-color: #151515 !important;
+	background-color: var(--main-color) !important; /*main color*/
 }
 /*buttons*/
 .r-yyyyoo {
-	fill: #ffffff !important;
+	fill: var(--highlight-color) !important; /*high light color*/
 }
 /*words*/
 .css-1jxf684 {
-	color: #ffffff !important;
+	color: var(--highlight-color) !important; /*high light color*/
 }
 /*button post big*/
 a[href="/compose/post"] {
-	background-color: #232323 !important;
+	background-color: var(--secondary-color) !important; /*secondary color*/
 }
 /*button post small*/
 [data-testid="tweetButtonInline"] {
-	background-color: #232323 !important;
+	background-color: var(--secondary-color) !important; /*secondary color*/
 }
 /*header 2*/
 .r-1h3ijdo {
-	background-color: #151515 !important;
+	background-color: var(--main-color) !important; /*main color*/
 }
 /*your account has been seen by x people*/
 .r-1eltapf {
